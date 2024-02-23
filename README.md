@@ -1,33 +1,11 @@
-![tests_badge] (https://github.com/Jtachan/{REPO}/actions/workflows/unittests.yml/badge.svg)
-![docs_badge] (https://github.com/Jtachan/{REPO}/actions/workflows/docs.yml/badge.svg)
-![release_badge] (https://github.com/Jtachan/{REPO}/actions/workflows/release.yml/badge.svg)
+# Python Base Extended
 
-# Python Repo Template
+The `pybase_ext` modules serve three purposes:
 
-Fill up with a repo description
+* Enable the use of new base classes in older Python versions. For example, `enum.StrEnum` is new in Python 3.11, but `pybase_ext` allows users on previous versions to use it too.
+* Enable experimental classes not implemented in other modules. For example, `enum.TupleEnum` is not implemented in `enum`, but `pybase_ext` allows users to create enumerations where its members are tuples.
+* Provide of new classes containing commonly used constant values. For example, `pybase_ext.colors.BGR` provides a wrapper to commonly used BGR color codes, like `BGR.WHITE` to use the color code `(255, 255, 255)`
 
-## 📖 Documentation
+## WIP
 
-You can find the documentation:
-
-- Within the [`/docs`](docs/index.md) folder
-- At the mkdocs generated page(https://jtachan.github.io/REPO_NAME/) (official documentation)
-
-## 🐍 Python Setup
-
-**Requirements**
-
-- Python 3.8 or higher
-
-**Installation**
-
-The package is installable via pip:
-````commandline
-pip install pkg
-````
-
-The 'develop' branch can also be installed to work with unreleased features:
-````commandline
-pip install git+https://github.com/Jtachan/{REPO}.git@develop
-````
-
+This code is still a work in progress!
