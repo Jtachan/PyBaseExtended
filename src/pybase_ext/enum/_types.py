@@ -7,6 +7,7 @@ import enum
 
 class ReprEnum(enum.Enum):
     """Changes the repr() and str(), leaving format() to the mixed-in type."""
+
     def __repr__(self):
         return str(self.value)
 
