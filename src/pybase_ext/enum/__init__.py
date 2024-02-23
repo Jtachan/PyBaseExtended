@@ -1,6 +1,7 @@
 """
 Different enumerations types supported for python >= 3.7
 """
-from ._types import StrEnum, TupleEnum
+__all__ = ["StrEnum", "TupleEnum", "auto", "IntEnum", "IntFlag", "Flag", "unique"]
+from enum import Flag, IntEnum, IntFlag, auto, unique
 
-__all__ = ["StrEnum", "TupleEnum"]
+from ._types import StrEnum, TupleEnum
