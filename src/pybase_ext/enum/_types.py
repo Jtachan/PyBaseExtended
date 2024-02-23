@@ -5,7 +5,16 @@ import builtins
 import enum
 
 
-class StrEnum(builtins.str, enum.Enum):
+class ReprEnum(enum.Enum):
+    """Changes the repr() and str(), leaving format() to the mixed-in type."""
+    def __repr__(self):
+        return str(self.value)
+
+    def __str__(self):
+        return str(self.value)
+
+
+class StrEnum(builtins.str, ReprEnum):
     """Enumeration where members are strings."""
 
     @staticmethod
@@ -18,5 +27,5 @@ class StrEnum(builtins.str, enum.Enum):
         return name.lower()
 
 
-class TupleEnum(builtins.tuple, enum.Enum):
+class TupleEnum(builtins.tuple, ReprEnum):
     """Enumeration where members are tuples."""
