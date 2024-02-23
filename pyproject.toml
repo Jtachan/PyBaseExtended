@@ -12,7 +12,7 @@ urls = { Source = "https://github.com/Jtachan/PyBaseExtended.git" }
 dependencies = [
     # The idea is to keep this package without dependencies
 ]
-requires-python = ">=3.7"
+requires-python = ">=3.8"
 license = { text = "MIT license" }
 dynamic = ["readme", "version"]
 

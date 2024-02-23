@@ -1,5 +1,5 @@
 """
-Different enumerations types supported for python >= 3.7
+Different enumerations types supported for python >= 3.8
 """
 __all__ = ["StrEnum", "TupleEnum", "auto", "IntEnum", "IntFlag", "Flag", "unique"]
 from enum import Flag, IntEnum, IntFlag, auto, unique

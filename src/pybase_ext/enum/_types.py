@@ -1,6 +1,4 @@
-"""
-New enum types supported for python >= 3.7
-"""
+"""New and experimental enum types."""
 import builtins
 import enum
 
