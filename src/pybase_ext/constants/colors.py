@@ -2,7 +2,7 @@
 from pybase_ext.enum import TupleEnum
 
 
-class RGBColor(TupleEnum):
+class RGB(TupleEnum):
     """
     Enumeration in which members are RGB color codes.
     """
@@ -27,7 +27,7 @@ class RGBColor(TupleEnum):
     NAVY = (0, 0, 128)
 
 
-class BGRColor(TupleEnum):
+class BGR(TupleEnum):
     """
     Enumeration in which members are BGR color codes.
     """

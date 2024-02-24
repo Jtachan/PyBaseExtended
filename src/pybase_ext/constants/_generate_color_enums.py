@@ -58,8 +58,7 @@ def generate_color_enum(
     """Wrapper to define a whole color enum class."""
     return (
         f"class {class_name}({enum_type}): \n"
-        f'\t"""\n\t{description}\n\t"""\n'
-        "\t"
+        f'\t"""\n\t{description}\n\t"""\n\t'
         + "\n\t".join(
             [f"{name} = {value}" for name, value in _get_name_and_value(**kwargs)]
         )
@@ -69,13 +68,13 @@ def generate_color_enum(
 if __name__ == "__main__":
     color_classes = [
         generate_color_enum(
-            class_name="RGBColor",
+            class_name="RGB",
             enum_type="TupleEnum",
             description="Enumeration in which members are RGB color codes.",
             bgr_format=False,
         ),
         generate_color_enum(
-            class_name="BGRColor",
+            class_name="BGR",
             enum_type="TupleEnum",
             description="Enumeration in which members are BGR color codes.",
             bgr_format=True,

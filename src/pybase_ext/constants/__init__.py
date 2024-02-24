@@ -1,4 +1,4 @@
 """Classes containing generic constant values"""
-from . import colors
+from .colors import BGR, RGB
 
-__all__ = ["colors"]
+__all__ = ["BGR", "RGB"]
