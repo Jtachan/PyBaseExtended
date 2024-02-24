@@ -57,7 +57,7 @@ def generate_color_enum(
 ) -> str:
     """Wrapper to define a whole color enum class."""
     return (
-        f"class {class_name}({enum_type}):\n"
+        f"class {class_name}({enum_type}): \n"
         f'\t"""\n\t{description}\n\t"""\n'
         "\t"
         + "\n\t".join(
