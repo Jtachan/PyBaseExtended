@@ -25,8 +25,8 @@ class Color(enum.TupleEnum):
 
 - [Backported](#backported-classes)
   - [StrEnum](#strenum)
-- [Experimental]
-  - [TupleEnum]
+- [Experimental](#experimental-classes)
+  - [TupleEnum](#tupleenum)
 
 ## Backported classes
 
