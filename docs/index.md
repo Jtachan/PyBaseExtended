@@ -24,6 +24,7 @@ class Color(enum.TupleEnum):
 ## Index
 - **All modules**
   - [`enum`](enum.md)
+  - [colors](colors.md)
 - **Backported modules**
   - [`enum`](enum.md#backported-classes)
 - **Experimental classes**
