@@ -40,9 +40,7 @@ class StrEnum(builtins.str, ReprEnum):
 
     @staticmethod
     def _generate_next_value_(name, start, count, last_values):
-        """
-        Return the lower-cased version of the member name.
-        """
+        """Return the lower-cased version of the member name."""
         return name.lower()
 
 
