@@ -5,10 +5,10 @@ authors = [
     { name = "Jaime Gonzalez Gomez", email = "jim.gomez.dnn@gmail.com" },
 ]
 description = """
-Extended Python classes to support new classes in old Python
-releases (for example, enum.StrEnum) or new unreleased functionalities.
+Basic Python modules to support new classes in old Python
+releases (for example, enum.StrEnum) or new unreleased/experimental codes.
 """
-urls = { Source = "https://github.com/Jtachan/PyBaseExtended.git" }
+urls = { Source = "https://github.com/Jtachan/PyBaseExtension.git" }
 dependencies = [
     # The idea is to keep this package without dependencies
 ]
