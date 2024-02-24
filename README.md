@@ -13,4 +13,4 @@ There are still required changes to do before the first release (v0.1.0):
 
 - [ ] Define the `pybase_ext.colors` module.
 - [ ] Enable GitHub actions (files should be almost ready).
-- [ ] Create mkdocs page.
+- [ ] Create ~~mkdocs~~ sphinx documentation.
