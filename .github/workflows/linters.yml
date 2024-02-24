@@ -22,12 +22,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r dev_requirements.txt
           pip install .
+      - name: Set all paths to be checked
+        run: paths="src unittests"
       - name: Run linters
         run: |
-          @echo off
-          set PATHS = src unittests
-          @echo on
-          isort --check %PATHS%
-          black --check %PATHS%
-          flake8 --tee --format=pylint %PATHS%
-          pylint --rcfile=pylintrc %PATHS%
+          isort --check ${{ env.paths }}
+          black --check ${{ env.paths }}
+          flake8 --tee --format=pylint ${{ env.paths }}
+          pylint --rcfile=pylintrc %${{ env.paths }}
