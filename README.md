@@ -1,4 +1,4 @@
-# Python Base Extended
+# Python Base Extension
 
 The `pybase_ext` modules serve three purposes:
 
@@ -9,8 +9,4 @@ The `pybase_ext` modules serve three purposes:
 ## TBD - WIP
 
 This code is still a work in progress!
-There are still required changes to do before the first release (v0.1.0):
-
-- [ ] Define the `pybase_ext.colors` module.
-- [ ] Enable GitHub actions (files should be almost ready).
-- [ ] Create ~~mkdocs~~ sphinx documentation.
+New functions to be included can be found [here](src/pybase_ext/TBD.md).
