@@ -1,3 +1,5 @@
+![tests_badge](https://github.com/Jtachan/PyBaseExtension/actions/workflows/unittests.yml/badge.svg)
+
 # Python Base Extension
 
 The `pybase_ext` modules serve three purposes:
