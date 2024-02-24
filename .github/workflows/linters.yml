@@ -23,7 +23,7 @@ jobs:
           pip install -r dev_requirements.txt
           pip install .
       - name: Set all paths to be checked
-        run: paths="src unittests"
+        run: echo "paths=src unittests" >> $GITHUB_ENV
       - name: Run linters
         run: |
           isort --check ${{ env.paths }}
