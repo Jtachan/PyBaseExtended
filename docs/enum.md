@@ -32,7 +32,7 @@ class Color(enum.TupleEnum):
 
 ### [**StrEnum**](https://docs.python.org/3.11/library/enum.html#enum.StrEnum)
 
-_StrEnum_ is the same as _Enum_, but its members are also strings and can be used in most of the same places that a string can be used.
+_StrEnum_ is the same as [_Enum_](https://docs.python.org/3.12/library/enum.html#enum.Enum), but its members are also strings and can be used in most of the same places that a string can be used.
 Backported from Py-3.11.
 
 ```pycon
@@ -59,7 +59,7 @@ True
 
 ### **TupleEnum**
 
-_TupleEnum_ is the same as _Enum_, but its members are also tuples and can be used anywhere as tuples can be used.
+_TupleEnum_ is the same as [_Enum_](https://docs.python.org/3.12/library/enum.html#enum.Enum), but its members are also tuples and can be used anywhere as tuples can be used.
 
 ```pycon
 >>> from pybase_ext import enum
