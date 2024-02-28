@@ -74,4 +74,4 @@ _TupleEnum_ is the same as [_Enum_](https://docs.python.org/3.12/library/enum.ht
 [255, 255, 255]
 ```
 
-**Note**: Using [`auto`](https://docs.python.org/3.12/library/enum.html#enum.auto) is not supported by _TupleEnum_, and it will raise a `.
+**Note**: Using [`auto`](https://docs.python.org/3.12/library/enum.html#enum.auto) is not supported by _TupleEnum_, and it will raise a `NotImplementedError`.
