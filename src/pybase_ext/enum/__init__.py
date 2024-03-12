@@ -11,6 +11,6 @@ __all__ = [
     "StrEnum",
     "TupleEnum",
 ]
-from enum import Enum, Flag, IntEnum, IntFlag, auto, unique
+from enum import Enum, Flag, auto, unique
 
-from ._types import StrEnum, TupleEnum
+from ._types import StrEnum, TupleEnum, IntEnum, IntFlag
