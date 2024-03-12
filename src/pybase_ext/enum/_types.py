@@ -7,7 +7,10 @@ class ReprEnum(enum.Enum):
     """Used by builtins types enums to keep the str() of the mixed-in type."""
 
     def __str__(self):
-        return str(self.value)
+        return self.value.__str__()
+
+    def __format__(self, format_spec):
+        return self.value.__format__(format_spec)
 
 
 class IntEnum(ReprEnum, enum.IntEnum):
