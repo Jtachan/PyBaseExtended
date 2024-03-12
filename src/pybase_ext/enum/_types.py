@@ -4,13 +4,21 @@ import enum
 
 
 class ReprEnum(enum.Enum):
-    """Changes the repr() and str(), leaving format() to the mixed-in type."""
-
-    def __repr__(self):
-        return str(self.value)
+    """Used by builtins types enums to keep the str() of the mixed-in type."""
 
     def __str__(self):
-        return str(self.value)
+        return self.value.__str__()
+
+    def __format__(self, format_spec):
+        return self.value.__format__(format_spec)
+
+
+class IntEnum(ReprEnum, enum.IntEnum):
+    """Enum where members are also (and must be) ints."""
+
+
+class IntFlag(ReprEnum, enum.IntFlag):
+    """Support for integer-based Flags."""
 
 
 class StrEnum(builtins.str, ReprEnum):

@@ -1,7 +1,6 @@
 [project]
 name = "pybase-ext"
 authors = [
-    # You can specify multiple authors if required!
     { name = "Jaime Gonzalez Gomez", email = "jim.gomez.dnn@gmail.com" },
 ]
 description = """
