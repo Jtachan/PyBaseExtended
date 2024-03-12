@@ -31,16 +31,16 @@ def test_repr_enum():
 def test_str_enum():
     """Testing pybase_ext.enum.StrEnum"""
 
-    class Animals(enum.StrEnum):
+    class Animal(enum.StrEnum):
         DOG = enum.auto()
         CAT = "cat"
         PLATYPUS = enum.auto()
 
-    for pet in Animals:
+    for pet in Animal:
         assert isinstance(pet, str), "Type not defined correctly"
-        assert pet.upper() == str(pet.value).upper(), "str functions are not working"
+        assert pet.upper() == str(pet).upper(), "str builtin functions are not working"
 
-    assert list(Animals) == [
+    assert list(Animal) == [
         "dog",
         "cat",
         "platypus",
@@ -50,12 +50,12 @@ def test_str_enum():
 def test_tuple_enum():
     """Testing pybase_ext.enum.TupleEnum"""
 
-    class Colors(enum.TupleEnum):
+    class Color(enum.TupleEnum):
         WHITE = (255, 255, 255)
         BLACK = (0, 0, 0)
 
-    for c in Colors:
+    for c in Color:
         assert isinstance(c, tuple), "Type not defined correctly"
         assert c[0] in c, "tuple functions are not working"
 
-    assert list(Colors) == [(255, 255, 255), (0, 0, 0)], "Formatting not working"
+    assert list(Color) == [(255, 255, 255), (0, 0, 0)], "Formatting not working"
