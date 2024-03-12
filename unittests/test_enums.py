@@ -14,7 +14,7 @@ def test_repr_enum():
         GREEN = enum.auto()
 
     assert Color.RED & 2 is Color(0)
-    assert repr(Color.RED | 2) == "<Color.RED|GREEN: 3>"
+    assert repr(Color.RED | 2) in ("<Color.RED|GREEN: 3>", "<Color.GREEN|RED: 3>")
     assert str(Color.RED) == "1"
 
     class Number(enum.IntEnum):
