@@ -10,6 +10,14 @@ class ReprEnum(enum.Enum):
         return str(self.value)
 
 
+class IntEnum(ReprEnum, enum.IntEnum):
+    """enum.IntEnum updates its str() call in python 3.11"""
+
+
+class IntFlag(ReprEnum, enum.IntFlag):
+    """enum.IntFlag updates its str() call in python 3.11"""
+
+
 class StrEnum(builtins.str, ReprEnum):
     """Enum where members are also (and must be) strings."""
 
