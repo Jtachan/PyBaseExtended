@@ -8,8 +8,6 @@ The `pybase_ext` modules serve three purposes:
 * Enable experimental classes not implemented in other modules. For example, `enum.TupleEnum` is not implemented in `enum`, but `pybase_ext` allows users to create enumerations where its members are tuples.
 * Provide of new classes containing commonly used constant values. For example, `pybase_ext.colors.BGR` provides a wrapper to commonly used BGR color codes, like `BGR.WHITE` to use the color code `(255, 255, 255)`
 
-❗ This code is still a work in progress ❗<br/>
-New functions to be included can be found [here](https://github.com/Jtachan/PyBaseExtension/blob/develop/TBD.md).
 
 ## Setup
 
