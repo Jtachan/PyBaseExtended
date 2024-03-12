@@ -16,7 +16,7 @@ New functions to be included can be found [here](https://github.com/Jtachan/PyBa
 Install the package via pip.
 
 ```shell
-pip install pybase-extension
+pip install pybase-ext
 ```
 
 The latest changes on develop can be installed via pip + git:
