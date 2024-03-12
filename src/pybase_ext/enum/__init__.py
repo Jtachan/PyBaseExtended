@@ -13,4 +13,4 @@ __all__ = [
 ]
 from enum import Enum, Flag, auto, unique
 
-from ._types import StrEnum, TupleEnum, IntEnum, IntFlag
+from ._types import IntEnum, IntFlag, StrEnum, TupleEnum
