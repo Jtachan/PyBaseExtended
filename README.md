@@ -1,12 +1,12 @@
-![tests_badge](https://github.com/Jtachan/PyBaseExtension/actions/workflows/unittests.yml/badge.svg)
+![tests_badge](https://github.com/Jtachan/PyBackport/actions/workflows/unittests.yml/badge.svg)
 
-# Python Base Extension
+# Python Backport
 
-The `pybase_ext` modules serve three purposes:
+The `py_back` modules serve three purposes:
 
-* Enable the use of new base classes in older Python versions. For example, `enum.StrEnum` is new in Python 3.11, but `pybase_ext` allows users on previous versions to use it too.
-* Enable experimental classes not implemented in other modules. For example, `enum.TupleEnum` is not implemented in `enum`, but `pybase_ext` allows users to create enumerations where its members are tuples.
-* Provide of new classes containing commonly used constant values. For example, `pybase_ext.colors.BGR` provides a wrapper to commonly used BGR color codes, like `BGR.WHITE` to use the color code `(255, 255, 255)`
+* Enable the use of new base classes in older Python versions. For example, `enum.StrEnum` is new in Python 3.11, but `py_back` allows users on previous versions to use it too.
+* Enable experimental classes not implemented in other modules. For example, `enum.TupleEnum` is not implemented in `enum`, but `py_back` allows users to create enumerations where its members are tuples.
+* Provide of new classes containing commonly used constant values. For example, `py_back.colors` provides a wrapper to commonly used BGR color codes, like `BGR.WHITE` to use the color code `(255, 255, 255)`
 
 
 ## Setup
@@ -14,12 +14,12 @@ The `pybase_ext` modules serve three purposes:
 Install the package via pip.
 
 ```shell
-pip install pybase-ext
+pip install py-backport
 ```
 
 The latest changes on develop can be installed via pip + git:
 ```shell
-pip install git+https://github.com/Jtachan/PyBaseExtension.git@develop
+pip install git+https://github.com/Jtachan/PyBackport.git@develop
 ```
 
 ## 📖 Documentation
