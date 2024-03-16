@@ -4,8 +4,8 @@ authors = [
     { name = "Jaime Gonzalez Gomez", email = "jim.gomez.dnn@gmail.com" },
 ]
 description = """
-Basic Python modules to support new classes in old Python
-releases (for example, enum.StrEnum) or new unreleased/experimental codes.
+Python package to backport classes from new python releases (for example,
+enum.StrEnum released in py-3.11), as well as adding some experimental too.
 """
 urls = { Source = "https://github.com/Jtachan/PyBaseExtension.git" }
 dependencies = [
