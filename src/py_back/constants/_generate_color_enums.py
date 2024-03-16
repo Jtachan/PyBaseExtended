@@ -83,7 +83,7 @@ if __name__ == "__main__":
 
     mod_text = (
         '"""Module with enumerations containing color codes."""\n'
-        "from pybase_ext.enum import TupleEnum\n" + "\n\n".join(color_classes)
+        "from py_back.enum import TupleEnum\n" + "\n\n".join(color_classes)
     )
 
     with open("colors.py", "w", encoding="utf-8") as color_module:

@@ -1,5 +1,5 @@
 """Test the 'enums' module."""
-from pybase_ext import enum
+from py_back import enum
 
 
 def test_repr_enum():
@@ -29,7 +29,7 @@ def test_repr_enum():
 
 
 def test_str_enum():
-    """Testing pybase_ext.enum.StrEnum"""
+    """Testing py_back.enum.StrEnum"""
 
     class Animal(enum.StrEnum):
         DOG = enum.auto()
@@ -48,7 +48,7 @@ def test_str_enum():
 
 
 def test_tuple_enum():
-    """Testing pybase_ext.enum.TupleEnum"""
+    """Testing py_back.enum.TupleEnum"""
 
     class Color(enum.TupleEnum):
         WHITE = (255, 255, 255)

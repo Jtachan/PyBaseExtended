@@ -1,19 +1,22 @@
-# PyBase-Ext: Enumerations
+# PyBackport: Enumerations
 
-`pybase-ext` allows using the `enum` module just as the original, with the only difference at the import.
+`py_back` allows using the `enum` module just as the original, with the only difference at the import.
 
 ```python
-from pybase_ext import enum
+from py_back import enum
+
 
 class Number(enum.IntEnum):
     """Enumeration using the original 'IntEnum' call"""
     ONE = enum.auto()
     TWO = 2
 
+
 class Animal(enum.StrEnum):
     """Supported original 'StrEnum' for python versions < 3.11"""
     CAT = enum.auto()
     DOG = "dog"
+
 
 class Color(enum.TupleEnum):
     """Experimental 'TupleEnum' class"""
@@ -47,7 +50,7 @@ _IntEnum_ is the same as _Enum_, but its members are also integers and can be us
 _StrEnum_ is the same as [_Enum_](https://docs.python.org/3.12/library/enum.html#enum.Enum), but its members are also strings and can be used in most of the same places that a string can be used.
 
 ```pycon
->>> from pybase_ext import enum
+>>> from py_back import enum
 >>> class Animal(enum.StrEnum):
 ...    CAT = enum.auto()
 ...    DOG = "dog"
@@ -86,7 +89,7 @@ The class is used for any builtin type enum.
 _TupleEnum_ is the same as [_Enum_](https://docs.python.org/3.12/library/enum.html#enum.Enum), but its members are also tuples and can be used anywhere as tuples can be used.
 
 ```pycon
->>> from pybase_ext import enum
+>>> from py_back import enum
 >>> class Color(enum.TupleEnum):
 ...    """Experimental 'TupleEnum' class"""
 ...    BLACK = (0, 0, 0)

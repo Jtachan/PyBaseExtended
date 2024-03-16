@@ -1,5 +1,5 @@
 """Module with enumerations containing color codes."""
-from pybase_ext.enum import TupleEnum
+from py_back.enum import TupleEnum
 
 
 class RGB(TupleEnum):
