@@ -1,4 +1,4 @@
-# PyBase-Ext: Colors
+# PyBackport: Colors
 
 `pybase_ext.colors` allows easy import and use color codes, commonly used in computer vision applications.
 
@@ -9,7 +9,7 @@ The following are the supported classes:
 **Note**: Due to the existing of many color variations, the supported classes only contain the most common color codes.
 
 ```pycon
->>> from pybase_ext import colors
+>>> from py_back import colors
 >>> colors.RGB.RED
 (255, 0, 0)
 >>> colors.BGR.RED

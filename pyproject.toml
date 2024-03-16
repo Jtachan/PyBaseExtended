@@ -1,5 +1,5 @@
 [project]
-name = "pybase-ext"
+name = "py-backport"
 authors = [
     { name = "Jaime Gonzalez Gomez", email = "jim.gomez.dnn@gmail.com" },
 ]
@@ -20,7 +20,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.dynamic]
-version = { attr = "pybase_ext._version.__version__" }
+version = { attr = "py_back._version.__version__" }
 readme = { file = ["README.md"], content-type = "text/markdown" }
 
 [tool.setuptools.packages.find]
