@@ -1,6 +1,7 @@
-# Python Base Extension
+# Python Backport
 
-`pybase-ext` allows using its modules just as the original ones, with the only difference at the import.
+_Python Backport_ allows using its modules just as the original ones, with the only difference at the import.
+Any backported (or experimental) functionality can be imported with the module `py_back`.
 
 ```python
 from py_back import enum
@@ -28,7 +29,7 @@ class Color(enum.TupleEnum):
 - **All modules**
   - [enum](enum.md)
   - [colors](colors.md)
-- **Backported modules**
+- **Backports**
   - [enum](enum.md#backported-classes)
-- **Experimental classes**
+- **Experimental**
   - [enum](enum.md#experimental-classes)

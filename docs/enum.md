@@ -1,6 +1,6 @@
-# PyBase-Ext: Enumerations
+# PyBackport: Enumerations
 
-`pybase-ext` allows using the `enum` module just as the original, with the only difference at the import.
+`py_back` allows using the `enum` module just as the original, with the only difference at the import.
 
 ```python
 from py_back import enum

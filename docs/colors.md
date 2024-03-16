@@ -1,6 +1,6 @@
 # PyBackport: Colors
 
-`pybase_ext.colors` allows easy import and use color codes, commonly used in computer vision applications.
+`py_back.colors` allows easy import and use color codes, commonly used in computer vision applications.
 
 The following are the supported classes:
 * _RGB_: Contains red-green-blue color codes as tuples of three ints.
