@@ -1,4 +1,8 @@
 ![tests_badge](https://github.com/Jtachan/PyBackport/actions/workflows/unittests.yml/badge.svg)
+[![PyPI Version](https://img.shields.io/pypi/v/pybase-ext)](https://pypi.org/project/pybase-ext/)
+[![Python Version](https://img.shields.io/badge/python-3.8+-blue)](https://www.python.org/downloads/) 
+[![PyPI Downloads](https://img.shields.io/pypi/dm/pybase-ext)](https://pypi.org/project/pybase-ext/) 
+[![MIT License](https://img.shields.io/github/license/will2dye4/labyrinth)](https://github.com/Jtachan/PyBackport/blob/master/LICENSE)
 
 # Python Backport
 
