@@ -21,6 +21,7 @@ All color codes have been extracted from https://www.rapidtables.com/web/color/R
 [(0, 0, 0), (255, 255, 255), (255, 0, 0), (0, 255, 0), (0, 0, 255)]
 ```
 
+---
 ### _colors._**RGB**
 
 Each member contains RGB color codes.
