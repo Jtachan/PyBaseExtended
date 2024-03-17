@@ -2,7 +2,7 @@ site_name: PyBackport
 repo_url: https://github.com/Jtachan/PyBackport
 
 nav:
-  - Home: "index.md"
+  - Home: "about.md"
   - Backports:
       - Enum: "enum.md"
   - Constants:
