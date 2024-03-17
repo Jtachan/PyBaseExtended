@@ -33,7 +33,7 @@ class Color(enum.TupleEnum):
 
 ### with pip <small>recommended</small>
 
-_PyBackport_ is published as a Python package in PyPI and can be installed via `pip`.
+_PyBackport_ is published as a [Python package](https://pypi.org/project/PyBackport/) in PyPI and can be installed via pip.
 
 ```shell
 pip install py-backport
