@@ -4,26 +4,26 @@ from typing import Iterator, Tuple, Union
 # Table obtained from https://www.rapidtables.com/web/color/RGB_Color.html
 # This approach is takes as accessing the url through 'requests' provides a
 # security error.
-_basic_color_code_table = (
-    "Black	#000000	(0,0,0)\n"
-    "White	#FFFFFF	(255,255,255)\n"
-    "Red	#FF0000	(255,0,0)\n"
-    "Green	#00FF00	(0,255,0)\n"
-    "Blue	#0000FF	(0,0,255)\n"
-    "Yellow	#FFFF00	(255,255,0)\n"
-    "Cyan 	#00FFFF	(0,255,255)\n"
-    "Aqua	#00FFFF	(0,255,255)\n"
-    "Magenta	#FF00FF	(255,0,255)\n"
-    "Fuchsia	#FF00FF	(255,0,255)\n"
-    "Silver	#C0C0C0	(192,192,192)\n"
-    "Gray	#808080	(128,128,128)\n"
-    "Maroon	#800000	(128,0,0)\n"
-    "Olive	#808000	(128,128,0)\n"
-    "Dark_Green	#008000	(0,128,0)\n"
-    "Purple	#800080	(128,0,128)\n"
-    "Teal	#008080	(0,128,128)\n"
-    "Navy	#000080	(0,0,128)\n"
-).replace("\t", " ")
+_basic_color_code_table = [
+    "Black	#000000	(0,0,0)",
+    "White	#FFFFFF	(255,255,255)",
+    "Red	#FF0000	(255,0,0)",
+    "Green	#00FF00	(0,255,0)",
+    "Blue	#0000FF	(0,0,255)",
+    "Yellow	#FFFF00	(255,255,0)",
+    "Cyan 	#00FFFF	(0,255,255)",
+    "Aqua	#00FFFF	(0,255,255)",
+    "Magenta	#FF00FF	(255,0,255)",
+    "Fuchsia	#FF00FF	(255,0,255)",
+    "Silver	#C0C0C0	(192,192,192)",
+    "Gray	#808080	(128,128,128)",
+    "Maroon	#800000	(128,0,0)",
+    "Olive	#808000	(128,128,0)",
+    "Dark_Green	#008000	(0,128,0)",
+    "Purple	#800080	(128,0,128)",
+    "Teal	#008080	(0,128,128)",
+    "Navy	#000080	(0,0,128)",
+]
 
 
 def _get_name_and_value(
@@ -38,8 +38,9 @@ def _get_name_and_value(
     hex_format : bool
         If True, returns the color code as hexadecimal.
     """
-    for line in _basic_color_code_table.splitlines():
-        name, hex_val_str, code_val_str = line.split()
+    _basic_color_code_table.sort()
+    for color_item in _basic_color_code_table:
+        name, hex_val_str, code_val_str = color_item.replace("\t", " ").split()
         if hex_format:
             code_val = hex_val_str.replace("#", "")
         else:
@@ -70,19 +71,20 @@ if __name__ == "__main__":
         generate_color_enum(
             class_name="RGB",
             enum_type="TupleEnum",
-            description="Enumeration in which members are RGB color codes.",
+            description="Each member contains RGB color codes.",
             bgr_format=False,
         ),
         generate_color_enum(
             class_name="BGR",
             enum_type="TupleEnum",
-            description="Enumeration in which members are BGR color codes.",
+            description="Each member contains BGR color codes.",
             bgr_format=True,
         ),
     ]
 
     mod_text = (
-        '"""Module with enumerations containing color codes."""\n'
+        '"""Enumerations containing fix color values, extracted from '
+        'https://www.rapidtables.com/web/color/RGB_Color.html."""\n'
         "from py_back.enum import TupleEnum\n" + "\n\n".join(color_classes)
     )
 
