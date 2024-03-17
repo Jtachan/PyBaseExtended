@@ -1,52 +1,51 @@
-"""Module with enumerations containing color codes."""
+"""
+Enumerations containing fix color values, extracted from
+https://www.rapidtables.com/web/color/RGB_Color.html
+"""
 from py_back.enum import TupleEnum
 
 
 class RGB(TupleEnum):
-    """
-    Enumeration in which members are RGB color codes.
-    """
+    """Each member contains RGB color codes."""
 
-    BLACK = (0, 0, 0)
-    WHITE = (255, 255, 255)
-    RED = (255, 0, 0)
-    GREEN = (0, 255, 0)
-    BLUE = (0, 0, 255)
-    YELLOW = (255, 255, 0)
-    CYAN = (0, 255, 255)
     AQUA = (0, 255, 255)
-    MAGENTA = (255, 0, 255)
-    FUCHSIA = (255, 0, 255)
-    SILVER = (192, 192, 192)
-    GRAY = (128, 128, 128)
-    MAROON = (128, 0, 0)
-    OLIVE = (128, 128, 0)
+    BLACK = (0, 0, 0)
+    BLUE = (0, 0, 255)
+    CYAN = (0, 255, 255)
     DARK_GREEN = (0, 128, 0)
-    PURPLE = (128, 0, 128)
-    TEAL = (0, 128, 128)
+    FUCHSIA = (255, 0, 255)
+    GRAY = (128, 128, 128)
+    GREEN = (0, 255, 0)
+    MAGENTA = (255, 0, 255)
+    MAROON = (128, 0, 0)
     NAVY = (0, 0, 128)
+    OLIVE = (128, 128, 0)
+    PURPLE = (128, 0, 128)
+    RED = (255, 0, 0)
+    SILVER = (192, 192, 192)
+    TEAL = (0, 128, 128)
+    WHITE = (255, 255, 255)
+    YELLOW = (255, 255, 0)
 
 
 class BGR(TupleEnum):
-    """
-    Enumeration in which members are BGR color codes.
-    """
+    """Each member contains BGR color codes."""
 
-    BLACK = (0, 0, 0)
-    WHITE = (255, 255, 255)
-    RED = (0, 0, 255)
-    GREEN = (0, 255, 0)
-    BLUE = (255, 0, 0)
-    YELLOW = (0, 255, 255)
-    CYAN = (255, 255, 0)
     AQUA = (255, 255, 0)
-    MAGENTA = (255, 0, 255)
-    FUCHSIA = (255, 0, 255)
-    SILVER = (192, 192, 192)
-    GRAY = (128, 128, 128)
-    MAROON = (0, 0, 128)
-    OLIVE = (0, 128, 128)
+    BLACK = (0, 0, 0)
+    BLUE = (255, 0, 0)
+    CYAN = (255, 255, 0)
     DARK_GREEN = (0, 128, 0)
-    PURPLE = (128, 0, 128)
-    TEAL = (128, 128, 0)
+    FUCHSIA = (255, 0, 255)
+    GRAY = (128, 128, 128)
+    GREEN = (0, 255, 0)
+    MAGENTA = (255, 0, 255)
+    MAROON = (0, 0, 128)
     NAVY = (128, 0, 0)
+    OLIVE = (0, 128, 128)
+    PURPLE = (128, 0, 128)
+    RED = (0, 0, 255)
+    SILVER = (192, 192, 192)
+    TEAL = (128, 128, 0)
+    WHITE = (255, 255, 255)
+    YELLOW = (0, 255, 255)

@@ -1,4 +1,9 @@
 ![tests_badge](https://github.com/Jtachan/PyBackport/actions/workflows/unittests.yml/badge.svg)
+[![PyPI Version](https://img.shields.io/pypi/v/pybase-ext)](https://pypi.org/project/PyBackport/)
+[![Python Version](https://img.shields.io/badge/python-3.8+-blue)](https://www.python.org/downloads/) 
+[![PyPI Downloads](https://img.shields.io/pypi/dm/pybase-ext)](https://pypi.org/project/PyBackport/) 
+[![MIT License](https://img.shields.io/github/license/will2dye4/labyrinth)](https://github.com/Jtachan/PyBackport/blob/master/LICENSE)
+[![Docs](https://img.shields.io/badge/Mkdocs-page-blue)](jtachan.github.io/pybackport)
 
 # Python Backport
 
@@ -24,6 +29,7 @@ pip install git+https://github.com/Jtachan/PyBackport.git@develop
 
 ## 📖 Documentation
 
-Documentation can be found at the [`docs`](https://github.com/Jtachan/PyBaseExtension/blob/main/docs/index.md) folder.
+Documentation can be found:
 
-WIP: Sphinx documentation for further releases.
+- At the released [mkdocs page](jtachan.github.io/pybackport).
+- Within the [`docs`](https://github.com/Jtachan/PyBaseExtension/blob/main/docs/index.md) folder.

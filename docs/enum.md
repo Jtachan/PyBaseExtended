@@ -24,16 +24,7 @@ class Color(enum.TupleEnum):
     WHITE = (255, 255, 255)
 ```
 
-## Index
-
-- [Backported](#backported-classes)
-  - [IntEnum](#intenum)
-  - [StrEnum](#strenum)
-  - [IntFlag](#intflag)
-  - [ReprEnum](#reprenum)
-- [Experimental](#experimental-classes)
-  - [TupleEnum](#tupleenum)
-
+---
 ## Backported classes
 
 ### [_enum._**IntEnum**](https://docs.python.org/3/library/enum.html#enum.IntEnum)
@@ -82,6 +73,7 @@ IntFlag is the same as Flag, but its members are also integers and can be used a
 _ReprEnum_ uses the repr() of Enum, but the str() of the mixed-in data type.
 The class is used for any builtin type enum.
 
+---
 ## Experimental classes
 
 ### _enum._**TupleEnum**
