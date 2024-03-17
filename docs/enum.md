@@ -24,16 +24,6 @@ class Color(enum.TupleEnum):
     WHITE = (255, 255, 255)
 ```
 
-## Index
-
-- [Backported](#backported-classes)
-  - [IntEnum](#intenum)
-  - [StrEnum](#strenum)
-  - [IntFlag](#intflag)
-  - [ReprEnum](#reprenum)
-- [Experimental](#experimental-classes)
-  - [TupleEnum](#tupleenum)
-
 ## Backported classes
 
 ### [_enum._**IntEnum**](https://docs.python.org/3/library/enum.html#enum.IntEnum)
