@@ -1,0 +1,52 @@
+site_name: PyBackport
+repo_url: https://github.com/Jtachan/PyBackport
+
+nav:
+  - Home: "about.md"
+  - Backports:
+      - Enum: "enum.md"
+  - Constants:
+      - Colors: "colors.md"
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - navigation.instant
+    - navigation.footer
+    - navigation.sections
+    - search.suggest
+    - search.highlight
+    - navigation.top
+    - navigation.tracking
+    - search.share
+    - search.suggest
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - footnotes
+  - toc:
+      permalink: true
+plugins:
+  - search
+
+extra:
+  version:
+    provider: mike # allows deploying versioned documentation for each release

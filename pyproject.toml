@@ -1,11 +1,11 @@
 [project]
-name = "pybase-ext"
+name = "py-backport"
 authors = [
     { name = "Jaime Gonzalez Gomez", email = "jim.gomez.dnn@gmail.com" },
 ]
 description = """
-Basic Python modules to support new classes in old Python
-releases (for example, enum.StrEnum) or new unreleased/experimental codes.
+Python package to backport classes from new python releases (for example,
+enum.StrEnum released in py-3.11), as well as adding some experimental too.
 """
 urls = { Source = "https://github.com/Jtachan/PyBaseExtension.git" }
 dependencies = [
@@ -20,7 +20,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.dynamic]
-version = { attr = "pybase_ext._version.__version__" }
+version = { attr = "py_back._version.__version__" }
 readme = { file = ["README.md"], content-type = "text/markdown" }
 
 [tool.setuptools.packages.find]

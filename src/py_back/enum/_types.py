@@ -4,7 +4,7 @@ import enum
 
 
 class ReprEnum(enum.Enum):
-    """Used by builtins types enums to keep the str() of the mixed-in type."""
+    """Updates 'repr', leaving 'str' and 'format' to the builtin class."""
 
     def __str__(self):
         return self.value.__str__()
