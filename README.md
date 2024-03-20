@@ -3,7 +3,7 @@
 [![Python Version](https://img.shields.io/badge/python-3.8+-blue)](https://www.python.org/downloads/) 
 [![PyPI Downloads](https://img.shields.io/pypi/dm/pybase-ext)](https://pypi.org/project/PyBackport/) 
 [![MIT License](https://img.shields.io/github/license/will2dye4/labyrinth)](https://github.com/Jtachan/PyBackport/blob/master/LICENSE)
-[![Docs](https://img.shields.io/badge/Mkdocs-page-blue)](jtachan.github.io/pybackport)
+[![Docs](https://img.shields.io/badge/Mkdocs-page-blue)](https://Jtachan.github.io/PyBackport/)
 
 # Python Backport
 
