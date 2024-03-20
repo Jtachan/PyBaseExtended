@@ -1,5 +1,5 @@
 """Test the 'enums' module."""
-from py_back import enum
+from pybase_ext import enum
 
 
 def test_repr_enum():

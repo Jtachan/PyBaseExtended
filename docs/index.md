@@ -1,14 +1,19 @@
-# Python Backport
+# Python Base Extension
+
+❗ This is a legacy release. This version won't be updated.
+
+Please update to [`PyBackport`](https://github.com/Jtachan/PyBackport) to continue using a maintained version.
+`pybase-ext` will be deprecated when `py-backport` has its major release v1.0.
 
 ## About
 
-_Python Backport_ main goal is to backport functionalities from newer python releases.
+_Python Base Extension_ main goal is to backport functionalities from newer python releases.
 It allows using its modules just as the original ones, with the only difference at the import.
 
-Any backported (or experimental) functionality can be imported with the module `py_back`.
+Any backported (or experimental) functionality can be imported with the module `pybase_ext`.
 
 ```python
-from py_back import enum
+from pybase_ext import enum
 
 
 class Number(enum.IntEnum):
@@ -33,30 +38,30 @@ class Color(enum.TupleEnum):
 
 ### with pip <small>recommended</small>
 
-_PyBackport_ is published as a [Python package](https://pypi.org/project/PyBackport/) in PyPI and can be installed via pip.
+_PyBaseExtension_ is published as a [Python package](https://pypi.org/project/PyBaseExtension/) in PyPI and can be installed via pip.
 
 ```shell
-pip install py-backport
+pip install pybase-ext
 ```
 
 ### with git
 
-_PyBackport_ can be directly used from [GitHub](https://github.com/Jtachan/PyBackport) by cloning the repository and installing locally. 
+_PyBaseExtension_ can be directly used from [GitHub](https://github.com/Jtachan/PyBaseExtension) by cloning the repository and installing locally. 
 ```commandline
-git clone https://github.com/Jtachan/PyBackport.git
+git clone https://github.com/Jtachan/PyBaseExtension.git
 pip install -e py-backport
 ```
 
 Alternatively, any pip-install-git command can be called over the repository.
 
 ```commandline
-pip install git+https://github.com/Jtachan/PyBackport.git
+pip install git+https://github.com/Jtachan/PyBaseExtension.git
 ```
 
 Latest unreleased changes are also installable by installing the develop branch. Before doing so, consider that they might be breaking changes.
 
 ```commandline
-pip install git+https://github.com/Jtachan/PyBackport.git@develop
+pip install git+https://github.com/Jtachan/PyBaseExtension.git@develop
 ```
 
 ---
